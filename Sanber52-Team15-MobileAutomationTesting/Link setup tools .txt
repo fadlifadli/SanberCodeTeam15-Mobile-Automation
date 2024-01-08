@@ -11,3 +11,7 @@ Python: https://www.python.org/downloads/windows/
 Pip Install: 
 - https://www.geeksforgeeks.org/how-to-install-pip-on-windows/ 
 - https://www.geeksforgeeks.org/how-to-install-pip-in-macos/
+
+
+guide add system environmet system ANDROID HOME and ADB check
+https://www.programsbuzz.com/article/set-androidhome-environment-variable-windows-10

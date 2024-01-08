@@ -15,3 +15,10 @@ Pip Install:
 
 guide add system environmet system ANDROID HOME and ADB check
 https://www.programsbuzz.com/article/set-androidhome-environment-variable-windows-10
+
+
+
+ 
+username_login = support@ngendigital.com
+password_login = abc123
+static booking ID for search: DA935

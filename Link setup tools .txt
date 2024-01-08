@@ -1,0 +1,13 @@
+Link setup tools
+
+[Related Links]
+
+Java: https://www.oracle.com/id/java/technologies/downloads/#jdk21-windows 
+Android Studio: https://developer.android.com/studio
+Appium Desktop: https://github.com/appium/appium-desktop/releases
+Appium Inspector: https://github.com/appium/appium-inspector/releases
+Scrcpy: https://github.com/Genymobile/scrcpy/blob/master/doc/ windows.md (optional).
+Python: https://www.python.org/downloads/windows/ 
+Pip Install: 
+- https://www.geeksforgeeks.org/how-to-install-pip-on-windows/ 
+- https://www.geeksforgeeks.org/how-to-install-pip-in-macos/

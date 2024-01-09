@@ -14,11 +14,11 @@ ${APP_ACTIVITY}                               com.example.myapplication.MainActi
 
 ${UserName}            support@ngendigital.com
 ${Password}            abc123
-${bttn_Login}          //android.widget.Button[@resource-id="com.example.myapplication:id/login"]
+${bttn_Login}          xpath= //android.widget.Button[@resource-id="com.example.myapplication:id/login"]
 # static booking ID for search: DA935
-${field_Username}      //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
-${field_Password}      //android.widget.EditText[@resource-id="com.example.myapplication:id/password"]
-${bttn_sign in}        //android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]
+${field_Username}      xpath= //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
+${field_Password}      xpath= //android.widget.EditText[@resource-id="com.example.myapplication:id/password"]
+${bttn_sign in}        xpath= //android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]
 
 
 *** Keywords ***
@@ -30,6 +30,7 @@ Open Flight Application
     ...                         appPackage=${APP_PACKAGE}
     ...                         appActivity=${APP_ACTIVITY}
 Verify Login page
+    # Wait Activity
     Click Text                       ${bttn_sign in}
     Wait Until Element Is Visible    ${field_Username}
     Wait Until Element Is Visible    ${field_Password}
@@ -58,9 +59,9 @@ Login With Valid Credentials
 
 *** Test Cases ***
 Login
-    Open Flight Application
-    # Verify Login page
-    # Input User Email On Login Page
-    # Input User Password On Login Page
-    # Click Sign In Button On Login Page
-    # Login With Valid Credentials
+    # Open Flight Application
+    Verify Login page
+    Input User Email On Login Page
+    Input User Password On Login Page
+    Click Sign In Button On Login Page
+    Login With Valid Credentials

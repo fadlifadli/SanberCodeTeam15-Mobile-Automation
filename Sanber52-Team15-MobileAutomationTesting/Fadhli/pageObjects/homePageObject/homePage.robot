@@ -12,3 +12,10 @@ Click Sign In Button On Home Page
 
 Verify User Is Logged In
     Wait Until Element Is Visible      ${userName_text_homePage}
+
+*** Test Cases ***
+Home page
+    Open Flight Application    
+    Verify Home Page Appears
+    Click Sign In Button On Home Page
+    Verify User Is Logged In

@@ -1,88 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20240108 17:37:20.600" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20240109 17:34:39.756" rpa="false" schemaversion="3">
 <suite id="s1" name="Github-Sanber52-Team15-MobileAutomation" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation">
 <suite id="s1-s1" name="Sanber52-Team15-MobileAutomationTesting" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting">
 <suite id="s1-s1-s1" name="Fadhli" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting\Fadhli">
-<suite id="s1-s1-s1-s1" name="Suites" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting\Fadhli\suites">
-<suite id="s1-s1-s1-s1-s1" name="loginSuite" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting\Fadhli\suites\loginSuite.robot">
-<test id="s1-s1-s1-s1-s1-t1" name="User should be able to login with valid credentials" line="14">
-<kw name="Run Keywords" library="BuiltIn" type="SETUP">
-<arg>Open Flight Application</arg>
-<arg>AND Login With Valid Credentials</arg>
-<doc>Executes all the given keywords in a sequence.</doc>
-<kw name="Open Flight Application" library="base">
-<kw name="Open Application" library="AppiumLibrary">
-<arg>remote_url=${REMOTE_URL}</arg>
-<arg>platformName=${PLATFORM_NAME}</arg>
-<arg>platformVersion=${PLATFORM_VERSION}</arg>
-<arg>deviceName=${DEVICE_NAME}</arg>
-<arg>appPackage=${APP_PACKAGE}</arg>
-<arg>appActivity=${APP_ACTIVITY}</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |
-| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
+<suite id="s1-s1-s1-s1" name="Quiz 4 Fadhli" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting\Fadhli\Quiz 4 Fadhli">
+<suite id="s1-s1-s1-s1-s1" name="Login" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting\Fadhli\Quiz 4 Fadhli\Login.robot">
+<test id="s1-s1-s1-s1-s1-t1" name="Login" line="61">
+<kw name="Verify Login page">
+<kw name="Click Text" library="AppiumLibrary">
+<arg>${bttn_sign in}</arg>
+<doc>Click text identified by ``text``.</doc>
 <kw name="Capture Page Screenshot" library="AppiumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20240108 17:37:43.490" level="FAIL">No application is open</msg>
-<status status="FAIL" starttime="20240108 17:37:43.489" endtime="20240108 17:37:43.511"/>
+<msg timestamp="20240109 17:34:40.024" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240109 17:34:40.024" endtime="20240109 17:34:40.024"/>
 </kw>
-<msg timestamp="20240108 17:37:43.515" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20240108 17:37:43.521" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
-    at AndroidUiautomator2Driver.fillDeviceDetails (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
-    at AndroidUiautomator2Driver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
-    at AppiumDriver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)</msg>
-<status status="FAIL" starttime="20240108 17:37:21.170" endtime="20240108 17:37:43.525"/>
+<msg timestamp="20240109 17:34:40.024" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240109 17:34:40.036" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240109 17:34:40.023" endtime="20240109 17:34:40.037"/>
 </kw>
-<status status="FAIL" starttime="20240108 17:37:21.170" endtime="20240108 17:37:43.526"/>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${field_Username}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20240109 17:34:40.039" endtime="20240109 17:34:40.039"/>
 </kw>
-<status status="FAIL" starttime="20240108 17:37:21.169" endtime="20240108 17:37:43.526"/>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${field_Password}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20240109 17:34:40.039" endtime="20240109 17:34:40.040"/>
 </kw>
-<kw name="Close Flight Application" library="base" type="TEARDOWN">
-<kw name="Close Application" library="AppiumLibrary">
-<doc>Closes the current application and also close webdriver session.</doc>
-<kw name="Capture Page Screenshot" library="AppiumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20240108 17:37:43.531" level="FAIL">No application is open</msg>
-<status status="FAIL" starttime="20240108 17:37:43.530" endtime="20240108 17:37:43.535"/>
+<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
+<arg>${bttn_sign in}</arg>
+<doc>Waits until element specified with `locator` is visible.</doc>
+<status status="NOT RUN" starttime="20240109 17:34:40.040" endtime="20240109 17:34:40.041"/>
 </kw>
-<msg timestamp="20240108 17:37:43.538" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20240108 17:37:43.542" level="FAIL">No application is open</msg>
-<status status="FAIL" starttime="20240108 17:37:43.529" endtime="20240108 17:37:43.544"/>
+<status status="FAIL" starttime="20240109 17:34:40.022" endtime="20240109 17:34:40.042"/>
 </kw>
-<status status="FAIL" starttime="20240108 17:37:43.528" endtime="20240108 17:37:43.545">No application is open</status>
+<kw name="Input User Email On Login Page">
+<status status="NOT RUN" starttime="20240109 17:34:40.043" endtime="20240109 17:34:40.043"/>
 </kw>
-<status status="FAIL" starttime="20240108 17:37:21.166" endtime="20240108 17:37:43.546">Setup failed:
-WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-Stacktrace:
-UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
-    at UIA2Proxy.command (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
-    at processTicksAndRejections (internal/process/task_queues.js:97:5)
-    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
-    at AndroidUiautomator2Driver.fillDeviceDetails (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
-    at AndroidUiautomator2Driver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
-    at AppiumDriver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)
-
-Also teardown failed:
-No application is open</status>
+<kw name="Input User Password On Login Page">
+<status status="NOT RUN" starttime="20240109 17:34:40.043" endtime="20240109 17:34:40.043"/>
+</kw>
+<kw name="Click Sign In Button On Login Page">
+<status status="NOT RUN" starttime="20240109 17:34:40.043" endtime="20240109 17:34:40.043"/>
+</kw>
+<kw name="Login With Valid Credentials">
+<status status="NOT RUN" starttime="20240109 17:34:40.043" endtime="20240109 17:34:40.043"/>
+</kw>
+<status status="FAIL" starttime="20240109 17:34:40.005" endtime="20240109 17:34:40.043">No application is open</status>
 </test>
-<status status="FAIL" starttime="20240108 17:37:20.700" endtime="20240108 17:37:43.554"/>
+<status status="FAIL" starttime="20240109 17:34:39.792" endtime="20240109 17:34:40.043"/>
 </suite>
-<status status="FAIL" starttime="20240108 17:37:20.692" endtime="20240108 17:37:43.558"/>
+<status status="FAIL" starttime="20240109 17:34:39.788" endtime="20240109 17:34:40.043"/>
 </suite>
-<status status="FAIL" starttime="20240108 17:37:20.684" endtime="20240108 17:37:43.561"/>
+<status status="FAIL" starttime="20240109 17:34:39.785" endtime="20240109 17:34:40.051"/>
 </suite>
-<status status="FAIL" starttime="20240108 17:37:20.677" endtime="20240108 17:37:43.567"/>
+<status status="FAIL" starttime="20240109 17:34:39.782" endtime="20240109 17:34:40.051"/>
 </suite>
-<status status="FAIL" starttime="20240108 17:37:20.612" endtime="20240108 17:37:43.569"/>
+<status status="FAIL" starttime="20240109 17:34:39.761" endtime="20240109 17:34:40.051"/>
 </suite>
 <statistics>
 <total>
@@ -94,12 +70,11 @@ No application is open</status>
 <stat pass="0" fail="1" skip="0" id="s1" name="Github-Sanber52-Team15-MobileAutomation">Github-Sanber52-Team15-MobileAutomation</stat>
 <stat pass="0" fail="1" skip="0" id="s1-s1" name="Sanber52-Team15-MobileAutomationTesting">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting</stat>
 <stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Fadhli">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Suites">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Suites</stat>
-<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="loginSuite">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Suites.loginSuite</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Quiz 4 Fadhli">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Quiz 4 Fadhli</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="Login">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Quiz 4 Fadhli.Login</stat>
 </suite>
 </statistics>
 <errors>
-<msg timestamp="20240108 17:37:43.515" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
-<msg timestamp="20240108 17:37:43.538" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240109 17:34:40.024" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>

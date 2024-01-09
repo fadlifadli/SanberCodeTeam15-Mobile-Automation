@@ -32,3 +32,11 @@ Login With Valid Credentials
     Input User Email On Login Page     ${email}
     Input User Password On Login Page  ${password}
     Click Sign In Button On Login Page
+
+*** Test Cases ***
+
+loginPage
+    Verify Home Page Appears
+    Click Sign In Button On Home Page
+    Verify User Is Logged In
+    homePage

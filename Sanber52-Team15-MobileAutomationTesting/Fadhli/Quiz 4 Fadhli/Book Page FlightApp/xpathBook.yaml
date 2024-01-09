@@ -1,0 +1,75 @@
+Boook 
+Id com.example.myapplication:id/book
+Xpath //android.widget.Button[@resource-id="com.example.myapplication:id/book"]
+BookFlightPage: '//android.widget.Button[@resource-id="com.example.myapplication:id/book"]'
+
+From city One Way
+accessibility id One Way
+xpath //android.support.v7.app.ActionBar.Tab[@content-desc="One Way"]
+FromCityOneWay: '//android.support.v7.app.ActionBar.Tab[@content-desc="One Way"]'
+
+From City Round Trip
+accessibility id Round Trip
+xpath //android.support.v7.app.ActionBar.Tab[@content-desc="Round Trip"]
+FromCityRoundTrip: '//android.support.v7.app.ActionBar.Tab[@content-desc="Round Trip"]'
+
+Start Date 
+id 	com.example.myapplication:id/textStartDate
+//android.widget.TextView[@resource-id="com.example.myapplication:id/textStartDate"]
+StartDate: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textStartDate"]'
+
+date 1Pick Start 
+id android:id/button1
+xpath //android.widget.Button[@resource-id="android:id/button1"]
+Date1PickStart: '//android.widget.Button[@resource-id="android:id/button1"]'
+
+End Date
+id com.example.myapplication:id/textEndDate
+xpath //android.widget.TextView[@resource-id="com.example.myapplication:id/textEndDate"]
+EndDate: '//android.widget.TextView[@resource-id="com.example.myapplication:id/textEndDate"]'
+
+Date 1Pick
+id android:id/button1
+xpath '//android.widget.Button[@resource-id="android:id/button1"]'
+Date1PickStart: '//android.widget.Button[@resource-id="android:id/button1"]'
+
+Flight Choose 
+id com.example.myapplication:id/radioButtonFlight
+xpath '//android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlight"]'
+FlightChoose: '//android.widget.RadioButton[@resource-id="com.example.myapplication:id/radioButtonFlight"]'
+
+button book from city
+id com.example.myapplication:id/book_flight
+class name android.widget.Button
+xpath //android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]
+ButtonBookFromCity: '//android.widget.Button[@resource-id="com.example.myapplication:id/book_flight"]'
+
+Button Confirm
+id com.example.myapplication:id/confirm_order
+xpath //android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]
+ButtonConfirm: '//android.widget.Button[@resource-id="com.example.myapplication:id/confirm_order"]'
+
+Click Price Pertama
+id com.example.myapplication:id/price1
+xpath //android.widget.Button[@resource-id="com.example.myapplication:id/price1"]
+ClickPricePertama: '//android.widget.Button[@resource-id="com.example.myapplication:id/price1"]'
+
+TextSuccesCreated
+id com.example.myapplication:id/checkedTextView
+class name android.widget.CheckedTextView
+xpath //android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]
+TextSuccesCreated: '//android.widget.CheckedTextView[@resource-id="com.example.myapplication:id/checkedTextView"]'
+
+Reservation number CADX2214
+
+
+
+Search
+id com.example.myapplication:id/search_flight
+xpath //android.widget.Button[@resource-id="com.example.myapplication:id/search_flight"]
+
+Checkin 
+id com.example.myapplication:id/button6 
+xpath //android.widget.Button[@resource-id="com.example.myapplication:id/button6"]
+
+

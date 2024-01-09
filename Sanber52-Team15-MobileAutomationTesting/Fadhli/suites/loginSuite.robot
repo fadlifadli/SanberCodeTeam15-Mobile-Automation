@@ -13,19 +13,19 @@ ${VALID_PASSWORD}            abc123
 *** Test Cases ***
 User should be able to login with valid credentials
     # step 1 : Open Flight Aplication 
-    Open Flight Application
+    # Open Flight Application
 
     # Step 2: Verify home page appears
-    # Verify Home Page Appears
+    Verify Home Page Appears
     
     # Step 3: Click sign in button on home page
-    # Click Sign In Button On Home Page
+    Click Sign In Button On Home Page
     
     # Step 4: Verify login page appears
-    # Verify Login Appears
+    Verify Login Appears
     
     # Step 5: Input username
-    # Input User Email On Login Page               ${VALID_EMAIL}
+    Input User Email On Login Page               ${VALID_EMAIL}
     
     # Step 6: Input password
     # Input User Password On Login Page            ${VALID_PASSWORD}

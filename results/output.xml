@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20240108 16:23:19.985" rpa="false" schemaversion="3">
+<robot generator="Robot 6.0.2 (Python 3.11.3 on win32)" generated="20240108 17:37:20.600" rpa="false" schemaversion="3">
 <suite id="s1" name="Github-Sanber52-Team15-MobileAutomation" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation">
 <suite id="s1-s1" name="Sanber52-Team15-MobileAutomationTesting" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting">
 <suite id="s1-s1-s1" name="Fadhli" source="D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Github-Sanber52-Team15-MobileAutomation\Sanber52-Team15-MobileAutomationTesting\Fadhli">
@@ -25,148 +25,81 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |
 | strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20240108 16:23:20.427" endtime="20240108 16:23:54.486"/>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240108 17:37:43.490" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240108 17:37:43.489" endtime="20240108 17:37:43.511"/>
 </kw>
-<status status="PASS" starttime="20240108 16:23:20.426" endtime="20240108 16:23:54.487"/>
+<msg timestamp="20240108 17:37:43.515" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240108 17:37:43.521" level="FAIL">WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
+    at AndroidUiautomator2Driver.fillDeviceDetails (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
+    at AndroidUiautomator2Driver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
+    at AppiumDriver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)</msg>
+<status status="FAIL" starttime="20240108 17:37:21.170" endtime="20240108 17:37:43.525"/>
 </kw>
-<kw name="AND Login With Valid Credentials" library="loginPage">
-<kw name="Verify Home Page Appears" library="homePage">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${logo_homePage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20240108 16:23:55.716" level="INFO">xpath criteria: //android.widget.ImageView[@resource-id="com.example.myapplication:id/imageView4"]</msg>
-<status status="PASS" starttime="20240108 16:23:54.497" endtime="20240108 16:23:55.716"/>
+<status status="FAIL" starttime="20240108 17:37:21.170" endtime="20240108 17:37:43.526"/>
 </kw>
-<status status="PASS" starttime="20240108 16:23:54.493" endtime="20240108 16:23:55.716"/>
-</kw>
-<kw name="Click Sign In Button On Home Page" library="homePage">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${signIn_button_homePage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20240108 16:23:55.796" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
-<status status="PASS" starttime="20240108 16:23:55.717" endtime="20240108 16:23:55.796"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${signIn_button_homePage}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20240108 16:23:55.797" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/login"]'.</msg>
-<msg timestamp="20240108 16:23:55.940" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/login"]</msg>
-<status status="PASS" starttime="20240108 16:23:55.796" endtime="20240108 16:23:55.940"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:55.717" endtime="20240108 16:23:55.940"/>
-</kw>
-<kw name="Verify Login Appears" library="loginPage">
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${email_input_loginPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20240108 16:23:57.109" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]
-xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]</msg>
-<status status="PASS" starttime="20240108 16:23:55.941" endtime="20240108 16:23:57.109"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${password_input_loginPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20240108 16:23:57.183" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/password"]</msg>
-<status status="PASS" starttime="20240108 16:23:57.109" endtime="20240108 16:23:57.184"/>
-</kw>
-<kw name="Wait Until Element Is Visible" library="AppiumLibrary">
-<arg>${signIn_button_loginPage}</arg>
-<doc>Waits until element specified with `locator` is visible.</doc>
-<msg timestamp="20240108 16:23:57.248" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]</msg>
-<status status="PASS" starttime="20240108 16:23:57.185" endtime="20240108 16:23:57.248"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:55.940" endtime="20240108 16:23:57.248"/>
-</kw>
-<kw name="Input User Email On Login Page" library="loginPage">
-<arg>${email}</arg>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>${email_input_loginPage}</arg>
-<arg>${email}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20240108 16:23:57.252" level="INFO">Typing text 'support@ngendigital.com' into text field '//android.widget.EditText[@resource-id="com.example.myapplication:id/username"]'</msg>
-<msg timestamp="20240108 16:23:57.369" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/username"]</msg>
-<status status="PASS" starttime="20240108 16:23:57.250" endtime="20240108 16:23:57.369"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:57.249" endtime="20240108 16:23:57.369"/>
-</kw>
-<kw name="Input User Password On Login Page" library="loginPage">
-<arg>${password}</arg>
-<kw name="Input Text" library="AppiumLibrary">
-<arg>${password_input_loginPage}</arg>
-<arg>${password}</arg>
-<doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20240108 16:23:57.373" level="INFO">Typing text 'abc123' into text field '//android.widget.EditText[@resource-id="com.example.myapplication:id/password"]'</msg>
-<msg timestamp="20240108 16:23:57.954" level="INFO">xpath criteria: //android.widget.EditText[@resource-id="com.example.myapplication:id/password"]</msg>
-<status status="PASS" starttime="20240108 16:23:57.370" endtime="20240108 16:23:57.954"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:57.369" endtime="20240108 16:23:57.955"/>
-</kw>
-<kw name="Click Sign In Button On Login Page" library="loginPage">
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${signIn_button_loginPage}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20240108 16:23:57.960" level="INFO">Clicking element '//android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]'.</msg>
-<msg timestamp="20240108 16:23:58.562" level="INFO">xpath criteria: //android.widget.Button[@resource-id="com.example.myapplication:id/signIn"]</msg>
-<status status="PASS" starttime="20240108 16:23:57.957" endtime="20240108 16:23:58.563"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:57.955" endtime="20240108 16:23:58.563"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:54.487" endtime="20240108 16:23:58.563"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:20.425" endtime="20240108 16:23:58.568"/>
-</kw>
-<kw name="Open Flight Application" library="base">
-<kw name="Open Application" library="AppiumLibrary">
-<arg>remote_url=${REMOTE_URL}</arg>
-<arg>platformName=${PLATFORM_NAME}</arg>
-<arg>platformVersion=${PLATFORM_VERSION}</arg>
-<arg>deviceName=${DEVICE_NAME}</arg>
-<arg>appPackage=${APP_PACKAGE}</arg>
-<arg>appActivity=${APP_ACTIVITY}</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |
-| strict_ssl          | No     | allows you to send commands to an invalid certificate host like a self-signed one. |</doc>
-<status status="PASS" starttime="20240108 16:23:58.575" endtime="20240108 16:24:29.266"/>
-</kw>
-<status status="PASS" starttime="20240108 16:23:58.574" endtime="20240108 16:24:29.266"/>
+<status status="FAIL" starttime="20240108 17:37:21.169" endtime="20240108 17:37:43.526"/>
 </kw>
 <kw name="Close Flight Application" library="base" type="TEARDOWN">
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20240108 16:24:29.272" endtime="20240108 16:24:31.042"/>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20240108 17:37:43.531" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240108 17:37:43.530" endtime="20240108 17:37:43.535"/>
 </kw>
-<status status="PASS" starttime="20240108 16:24:29.270" endtime="20240108 16:24:31.043"/>
+<msg timestamp="20240108 17:37:43.538" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240108 17:37:43.542" level="FAIL">No application is open</msg>
+<status status="FAIL" starttime="20240108 17:37:43.529" endtime="20240108 17:37:43.544"/>
 </kw>
-<status status="PASS" starttime="20240108 16:23:20.424" endtime="20240108 16:24:31.045"/>
+<status status="FAIL" starttime="20240108 17:37:43.528" endtime="20240108 17:37:43.545">No application is open</status>
+</kw>
+<status status="FAIL" starttime="20240108 17:37:21.166" endtime="20240108 17:37:43.546">Setup failed:
+WebDriverException: Message: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+Stacktrace:
+UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not proxy command to the remote server. Original error: socket hang up
+    at UIA2Proxy.command (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-base-driver\lib\jsonwp-proxy\proxy.js:274:13)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at AndroidUiautomator2Driver.commands.getDevicePixelRatio (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\commands\viewport.js:14:10)
+    at AndroidUiautomator2Driver.fillDeviceDetails (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:244:28)
+    at AndroidUiautomator2Driver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\node_modules\appium-uiautomator2-driver\lib\driver.js:230:7)
+    at AppiumDriver.createSession (D:\Fadli\Kursus QA Engineer Sanbercode\Mobile Automation\Setup Tools Mobile Automation\Appium-Server-GUI-windows-1.22.3-4\resources\app\node_modules\appium\lib\appium.js:387:35)
+
+Also teardown failed:
+No application is open</status>
 </test>
-<status status="PASS" starttime="20240108 16:23:20.030" endtime="20240108 16:24:31.065"/>
+<status status="FAIL" starttime="20240108 17:37:20.700" endtime="20240108 17:37:43.554"/>
 </suite>
-<status status="PASS" starttime="20240108 16:23:20.025" endtime="20240108 16:24:31.086"/>
+<status status="FAIL" starttime="20240108 17:37:20.692" endtime="20240108 17:37:43.558"/>
 </suite>
-<status status="PASS" starttime="20240108 16:23:20.022" endtime="20240108 16:24:31.094"/>
+<status status="FAIL" starttime="20240108 17:37:20.684" endtime="20240108 17:37:43.561"/>
 </suite>
-<status status="PASS" starttime="20240108 16:23:20.016" endtime="20240108 16:24:31.099"/>
+<status status="FAIL" starttime="20240108 17:37:20.677" endtime="20240108 17:37:43.567"/>
 </suite>
-<status status="PASS" starttime="20240108 16:23:19.991" endtime="20240108 16:24:31.110"/>
+<status status="FAIL" starttime="20240108 17:37:20.612" endtime="20240108 17:37:43.569"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Github-Sanber52-Team15-MobileAutomation">Github-Sanber52-Team15-MobileAutomation</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1" name="Sanber52-Team15-MobileAutomationTesting">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Fadhli">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Suites">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Suites</stat>
-<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1-s1" name="loginSuite">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Suites.loginSuite</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Github-Sanber52-Team15-MobileAutomation">Github-Sanber52-Team15-MobileAutomation</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1" name="Sanber52-Team15-MobileAutomationTesting">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1" name="Fadhli">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1" name="Suites">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Suites</stat>
+<stat pass="0" fail="1" skip="0" id="s1-s1-s1-s1-s1" name="loginSuite">Github-Sanber52-Team15-MobileAutomation.Sanber52-Team15-MobileAutomationTesting.Fadhli.Suites.loginSuite</stat>
 </suite>
 </statistics>
 <errors>
+<msg timestamp="20240108 17:37:43.515" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
+<msg timestamp="20240108 17:37:43.538" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: No application is open</msg>
 </errors>
 </robot>
